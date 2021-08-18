@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css cdn  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Log In</title>
+</head>
+<body>
+  <main class="flex justify-center items-start md:pt-8 pt-4 lg:pt-32   h-screen text-white">
+    <section class="w-3/5 mx-auto bg-blue-400 p-16 p-8  rounded">
+        <h2 class="text-3xl text-center p-2 rounded bg-blue-500">Welcome To My Bank</h2>
+
+        <div class="bg-blue-300 p-8  rounded ">
+            <h2  class="text-2xl ">Login please</h2>
+            <input id="emailField" class="w-3/4 my-1 px-1 rounded text-black" placeholder="email" type="email">
+            <input id="passField"  class="w-3/4 my-1 px-1 rounded text-black" placeholder="password" type="password"> <br>
+            <P><span id="warning1" class="text-red-400"></span> <span id="warning2" class="text-red-400"></span></P>
+            
+            <button  id="loginBtn" class=" px-4 rounded bg-blue-500 my-1 hover:bg-green-600">Log In</button> <a href="" class="inline mt-0">Create an account</a>
+        </div>
+    </section>
+    <div>
+
+    </div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

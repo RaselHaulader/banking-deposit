@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css cdn  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Bank</title>
+</head>
+
+<body>
+    <main class="md:p-8">
+        <section class="md:p-2 p-1 md:w-3/4 rounded  mx-auto bg-green-100 text-white">
+            <h2 class="text-3xl text-center p-2 rounded bg-blue-500">Balance and Transection </h2>
+            <!-- all display section  -->
+            <div class=" grid grid-cols-1 md:grid-cols-3 m-8 mb-2 gap-8">
+                <!-- deposit display  -->
+                <div class="bg-red-400 px-12 py-8 rounded-xl">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h1 class="text-4xl">$<span id="depositDisplay">00</span></h1>
+                </div>
+                <!-- withdraw display  -->
+                <div class="bg-indigo-400 px-12 py-8 rounded-xl">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h1 class="text-4xl">$<span id="withdrawDisplay">00</span></h1>
+                </div>
+                <!-- total balance display  -->
+                <div class="bg-pink-400 px-12 py-8 rounded-xl">
+                    <h3 class="text-2xl">Total Balance</h3>
+                    <h1 class="text-4xl">$<span id="totalDisplay">00</span></h1>
+                </div>
+            </div>
+            <!-- input field  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 mx-8 gap-2">
+                <!-- deposit input  -->
+                <div class="bg-pink-400 px-12 py-8  my-4 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <input id="depositField" class="text-black rounded mt-2" placeholder="$ amount to deposit"
+                        type="number"><button id="depositBtn"
+                        class="mt-2 ml-2 rounded px-2 bg-green-500">Deposit</button>
+                    <p id="depositError" class="text-red-600"></p>
+                </div>
+                <!-- withdraw input  -->
+                <div class="bg-blue-400 px-12 py-8  my-4 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <input id="withdrawField" class="text-black rounded mt-2" placeholder="$ amount to withdraw"
+                        type="number"><button id="withdrawBtn"
+                        class="mt-2 ml-2 rounded px-2 bg-red-400">Withdraw</button>
+                    <p id="withdrawError" class="text-red-600"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/functional.js"></script>
+
+</body>
+
+</html>
